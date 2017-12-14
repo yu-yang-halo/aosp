@@ -14,21 +14,26 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
+    Observer/uiobserver.cpp \
+    myapplication.cpp \
+    ChainOfResponsibility/uiresponsibilitychain.cpp \
+    global.cpp \
+    Observer/subject.cpp \
     Observer/observer.cpp \
-    Observer/observable.cpp \
-    Observer/user.cpp \
-    Observer/newspaper.cpp \
-    Observer/uiobserver.cpp
+    Observer/user.cpp
 
 HEADERS  += mainwindow.h \
+    Observer/uiobserver.h \
+    myapplication.h \
+    ChainOfResponsibility/uiresponsibilitychain.h \
+    global.h \
+    Observer/subject.h \
     Observer/observer.h \
-    Observer/observable.h \
-    Observer/user.h \
-    Observer/newspaper.h \
-    Observer/uiobserver.h
+    Observer/user.h
 
 FORMS    += mainwindow.ui \
-    Observer/uiobserver.ui
+    Observer/uiobserver.ui \
+    ChainOfResponsibility/uiresponsibilitychain.ui
 
 OTHER_FILES += \
     设计模式.txt

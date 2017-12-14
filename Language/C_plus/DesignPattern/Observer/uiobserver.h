@@ -2,8 +2,8 @@
 #define UIOBSERVER_H
 
 #include <QWidget>
-#include "newspaper.h"
 #include "user.h"
+#include "subject.h"
 namespace Ui {
 class UIObserver;
 }
@@ -17,26 +17,32 @@ public:
     ~UIObserver();
 
 private slots:
-    void on_btn_subscribe1_clicked();
 
-    void on_btn_subscribe2_clicked();
 
-    void on_btn_subscribe3_clicked();
+    void on_btn_11_clicked();
 
-    void on_btn_send_clicked();
+    void on_btn_22_clicked();
 
-    void on_btn_clear_clicked();
+    void on_btn_33_clicked();
 
-    void on_edit_message1_textChanged();
+    void on_btn_111_clicked();
 
-    void on_ck_auto_stateChanged(int arg1);
+    void on_btn_222_clicked();
+
+    void on_btn_333_clicked();
+
+    void on_btn_1_clicked();
+
+    void on_btn_2_clicked();
+
+    void on_btn_3_clicked();
 
 private:
     Ui::UIObserver *ui;
-    User* user1;
-    User* user2;
-    User* user3;
-    NewsPaper *newsPaper;
+    Subject *subject;
+    User    *user1;
+    User    *user2;
+    User    *user3;
 
 };
 

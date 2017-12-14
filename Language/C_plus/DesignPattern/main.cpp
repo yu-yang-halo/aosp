@@ -2,9 +2,10 @@
 #include <QApplication>
 #include <QDebug>
 #include <QVector>
+#include "myapplication.h"
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    MyApplication a(argc, argv);
     MainWindow w;
     w.show();
 

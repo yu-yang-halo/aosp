@@ -1,29 +1,25 @@
 #include "user.h"
 #include <QDebug>
-User::User(Observable *parent) :
-    Observable(parent)
+User::User(QObject *parent) :
+    Observer(parent)
 {
-    b_hasSubscribe = false;
 }
-
-void User::subscribe(Observer *const observer){
-    if(observer != NULL){
-        observer->addObservable(this);
-        b_hasSubscribe = true;
+User::~User(){
+    if(subject!=NULL){
+        subject->detachObserver(this);
     }
+    qDebug()<<"delete User:"<<name;
 }
-void User::cancelSubcribe(Observer *const observer){
-    if(observer != NULL){
-        observer->removeObservable(this);
-        b_hasSubscribe = false;
-    }
-}
-
 void User::update(const QString &msg){
-    qDebug()<<name<<" - 收到消息： [ "<<msg<<" ]";
-
-
-    if(textBrowser != NULL){
-        textBrowser->append(QString("%1 - 收到消息： [ %2 ]").arg(name,msg));
+    if(view!=NULL){
+        view->appendPlainText(msg);
     }
 }
+void User::send(const QString &str){
+
+    if(subject!=NULL&&!str.isEmpty()){
+        subject->setChanged(true);
+        subject->notifyAll(QString("%1: %2").arg(name,str));
+    }
+}
+

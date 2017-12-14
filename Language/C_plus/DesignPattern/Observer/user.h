@@ -1,29 +1,23 @@
 #ifndef USER_H
 #define USER_H
-
-#include <QObject>
-#include <QString>
-#include <QTextBrowser>
-#include "Observer/observer.h"
-#include "Observer/observable.h"
-class User : public Observable
+#include "observer.h"
+#include <QPlainTextEdit>
+class User : public Observer
 {
     Q_OBJECT
 public:
-    explicit User(Observable *parent = 0);
-    void subscribe(Observer *const observer);
-    void cancelSubcribe(Observer *const observer);
-    void setName(const QString _name){name = _name;}
-    QString getName() const{ return name;}
-    virtual void update(const QString &msg);
+    explicit User(QObject *parent = 0);
+    ~User();
+    void update(const QString &msg);
 
-    void attachShowLabel(QTextBrowser* _textBrowser){ textBrowser = _textBrowser; }
-    bool hasSubscribe() const{ return b_hasSubscribe;}
+    void attachView(QPlainTextEdit* _view){view=_view;}
+    void detachView(){ if(view!=NULL){ view =NULL; };}
+
+
+    void send(const QString &str);
 
 private:
-    QString name;
-    QTextBrowser* textBrowser;
-    bool    b_hasSubscribe;
+    QPlainTextEdit* view;
 
 };
 

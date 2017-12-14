@@ -1,42 +1,37 @@
-#ifndef OBSERVER_H
-#define OBSERVER_H
-
-#include <QObject>
-#include <QVector>
-#include <Observer/observable.h>
+#ifndef OBSERVABLE_H
+#define OBSERVABLE_H
 #include <QString>
+#include <QObject>
+#include "subject.h"
 /**
  * @brief The Observer class
- *
- * 观察者类
- *
- *
- *
+ * 接口类
  */
 
 class Observer : public QObject
 {
     Q_OBJECT
 public:
+    friend class Subject;
     explicit Observer(QObject *parent = 0);
     virtual ~Observer();
 
-    void addObservable(Observable *obs);
-    void removeObservable(Observable *obs);
+
+    virtual void update(const QString &msg) = 0;
 
 
-    void setChanged(bool _changed){ changed = _changed ;}
-    void notifyAll(const QString &msg);
-    void setTitle(const QString &_title){title = _title;}
+    QString getName() const;
+    void setName(const QString &value);
+    bool isAttached() const{ return subject != NULL;}
 
-    bool isExistObservable();
 
-private:
-    QVector<Observable *> *observables;
-    bool  changed;
-    QString title;
+
+protected:
+    QString name;
+    Subject* subject;
+
 
 
 };
 
-#endif // OBSERVER_H
+#endif // OBSERVABLE_H

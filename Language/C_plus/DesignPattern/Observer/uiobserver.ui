@@ -6,173 +6,201 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>832</width>
-    <height>570</height>
+    <width>1021</width>
+    <height>653</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="btn_send">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>180</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>推送新闻</string>
-   </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="textBrowser_message">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>230</y>
-     <width>631</width>
-     <height>221</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_3">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>160</y>
-     <width>141</width>
+     <x>540</x>
+     <y>70</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>王二</string>
+    <string>邹阳</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_1">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>40</y>
-     <width>141</width>
+     <x>0</x>
+     <y>70</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>张三</string>
+    <string>黄虎</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>100</y>
-     <width>141</width>
+     <x>270</x>
+     <y>70</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>李四</string>
+    <string>吴云龙</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_subscribe1">
+  <widget class="QPlainTextEdit" name="plainTextEdit_1">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>40</y>
-     <width>101</width>
-     <height>41</height>
+     <x>0</x>
+     <y>130</y>
+     <width>261</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_11">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>订阅</string>
+    <string>加入</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_subscribe2">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>100</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>订阅</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_subscribe3">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>170</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>订阅</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_paper">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>40</y>
-     <width>121</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>华尔街日报</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="edit_message1">
+  <widget class="QPushButton" name="btn_22">
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>40</y>
-     <width>191</width>
-     <height>131</height>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>加入</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_33">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>70</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>加入</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>研发群</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>130</y>
+     <width>261</width>
+     <height>341</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_clear">
+  <widget class="QPlainTextEdit" name="plainTextEdit_3">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>460</y>
-     <width>91</width>
+     <x>540</x>
+     <y>130</y>
+     <width>261</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_111">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_111">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>480</y>
+     <width>51</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>清空</string>
+    <string>发送</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="ck_auto">
+  <widget class="QPushButton" name="btn_222">
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>190</y>
-     <width>71</width>
-     <height>16</height>
+     <y>480</y>
+     <width>51</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>自动</string>
+    <string>发送</string>
    </property>
-   <property name="checked">
-    <bool>true</bool>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_222">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>480</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_333">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>480</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_333">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>480</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
    </property>
   </widget>
  </widget>
