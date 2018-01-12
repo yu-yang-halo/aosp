@@ -43,7 +43,7 @@
 
 1.Android学习启动篇 （http://blog.csdn.net/luoshengyang/article/details/6557518）
 
-2.Android源码（http://source.android.youdaxue.com/setup/downloading）   
+2.Android源码（http://source.android.youdaxue.com/）   
 
 
 # 设计模式（C++）
