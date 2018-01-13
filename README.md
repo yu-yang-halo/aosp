@@ -39,11 +39,11 @@
        《深入理解计算机系统》，对应的英文版是《Computer Systems: A Programmer's Perspective》
        
        
-老罗的博客：http://blog.csdn.net/luoshengyang/article/details/8923485 
+老罗的博客： http://blog.csdn.net/luoshengyang/article/details/8923485 
 
-1.Android学习启动篇 （http://blog.csdn.net/luoshengyang/article/details/6557518）
+1.Android学习启动篇 （ http://blog.csdn.net/luoshengyang/article/details/6557518 ）
 
-2.Android源码（http://source.android.youdaxue.com/）   
+2.Android源码（ http://source.android.youdaxue.com ）   
 
 
 # 设计模式（C++）
