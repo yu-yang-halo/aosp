@@ -45,6 +45,8 @@
 
 2.Android源码（ http://source.android.youdaxue.com ）   
 
+# QT
+http://download.qt.io/archive/qt/5.1/5.1.1/
 
 # 设计模式（C++）
 
